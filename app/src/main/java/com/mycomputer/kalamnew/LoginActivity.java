@@ -21,6 +21,10 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+
+/**
+ * Adding class comments
+ */
 public class LoginActivity extends AppCompatActivity  implements GoogleApiClient.OnConnectionFailedListener {
 
     @BindView(R.id.edit_email)
