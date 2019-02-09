@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -36,10 +37,13 @@ public class LoginActivity extends AppCompatActivity  implements GoogleApiClient
     @BindView(R.id.loginButton)
     Button btnLogin;
 
+    @BindView(R.id.register_tv)
+    TextView registration;
+
     @BindView(R.id.login_checkbox)
     CheckBox loginCheck;
 
-     @BindView(R.id.sign_in_button)
+    @BindView(R.id.sign_in_button)
     Button SignInButton;
 
 
@@ -57,46 +61,50 @@ public class LoginActivity extends AppCompatActivity  implements GoogleApiClient
     String email_str, pass_str;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        GoogleSignInOptions gso =  new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
-        googleApiClient=new GoogleApiClient.Builder(this)
-                .enableAutoManage(this,this)
-                .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
+        googleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this, this)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
-
-
 
 
         SignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
-                startActivityForResult(intent,RC_SIGN_IN);
+                startActivityForResult(intent, RC_SIGN_IN);
             }
         });
 
 
-
-
-
-
-
-
-    // loginFb();
+        // loginFb();
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Validation();
             }
         });
-    }
+
+    // loginFb();
+        registration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,Registration.class);
+                startActivity(intent);
+            }
+        });
+
+
+}
+
+
 
     //Login Validation
     private void Validation() {

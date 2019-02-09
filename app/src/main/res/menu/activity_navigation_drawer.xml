@@ -20,15 +20,15 @@
             android:id="@+id/Contacts"
             android:icon="@drawable/ic_contacts_black_24dp"
             android:title="Contacts" />
+
+        <item
+            android:id="@+id/PrivacyPolicy"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="PrivacyPolicy" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="">
         <menu>
-            <item
-                android:id="@+id/PrivacyPolicy"
-                android:icon="@drawable/ic_apps_black_24dp"
-                android:title="PrivacyPolicy" />
-
         </menu>
     </item>
 

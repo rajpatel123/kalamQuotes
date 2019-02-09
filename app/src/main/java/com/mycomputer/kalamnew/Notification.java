@@ -18,9 +18,9 @@ public class Notification extends AppCompatActivity implements TimePickerDialog.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
-        startNotification = findViewById(R.id.button1);
+        startNotification = findViewById(R.id.start_BTN);
         changeNotification = findViewById(R.id.buttton2);
-        stopNotification = findViewById(R.id.button3);
+        stopNotification = findViewById(R.id.stop_BTN);
         back = findViewById(R.id.button4);
 
         startNotification.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +40,7 @@ public class Notification extends AppCompatActivity implements TimePickerDialog.
         });
         stopNotification.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
 
             }
         });

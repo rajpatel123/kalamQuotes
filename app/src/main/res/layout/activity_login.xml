@@ -165,21 +165,60 @@
 
 
 
+
+
             <Button
-                android:paddingBottom="5dp"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/white_greyish"
-                android:textAllCaps="false"
-                android:textSize="15dp"
-                android:background="@color/primary_darker"
-                android:textStyle="italic"
                 android:id="@+id/sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign in with Google"/>
+                android:layout_marginTop="15dp"
+                android:background="@color/primary_darker"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Sign in with Google"
+                android:textAllCaps="false"
+                android:textColor="@color/white_greyish"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:textColor="@color/white_greyish"
+                    android:id="@+id/new_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="New Member?" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white_greyish"
+                    android:id="@+id/register_tv"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="Sign Up!" />
+
+            </LinearLayout>
+
+
 
             <!--
                         <com.facebook.login.widget.LoginButton

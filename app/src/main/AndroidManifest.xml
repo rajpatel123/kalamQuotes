@@ -29,10 +29,11 @@
         <activity
             android:name=".Notification"
             android:theme="@style/AppTheme2" />
-        <activity android:name=".NavigationActivity"></activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".ProfileActivity"></activity>
-
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Registration" />
     </application>
 
 </manifest>

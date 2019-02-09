@@ -7,10 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".Notification"
     android:theme="@style/AppTheme2"
-    android:outlineAmbientShadowColor="@color/primary_dark"
-    >
+    android:outlineAmbientShadowColor="@color/primary_dark">
     <LinearLayout
-
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_marginTop="30dp"
         android:background="#d7d7d5"
@@ -22,7 +20,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:gravity="center"
             android:background="@color/primary_dark"
             android:textSize="40dp"/>
@@ -62,20 +59,15 @@
         android:textColor="@color/black"
         android:gravity="center"
         android:text="Start Notification" />
-
-
-
-
-    <Button
-        android:id="@+id/button1"
+        <Button
+        android:id="@+id/start_BTN"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textColor="@color/white_greyish"
         android:background="@color/primary_darker"
         android:layout_width="match_parent"
-
-        android:layout_height="60dp"
+            android:layout_height="60dp"
         android:text="Start Notification "/>
     <Button
         android:id="@+id/buttton2"
@@ -89,7 +81,7 @@
         android:textColor="@color/white_greyish"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/stop_BTN"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:layout_marginLeft="10dp"
